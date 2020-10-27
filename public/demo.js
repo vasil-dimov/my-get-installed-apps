@@ -5,13 +5,13 @@ const divNotSupported = document.getElementById('not-supported');
 
 window.addEventListener('load', () => {
     // Check to see if the API is supported.
-    if ('getInstalledRelatedApps' in navigator) {
-        var isAndroid = /(android)/i.test(navigator.userAgent);
-        if (isAndroid) {
-            smartBanner.classList.toggle('hidden', false);
-            divNotSupported.classList.toggle('hidden', true);
-            checkForRelatedApps();
-        }
+    const isGetInstalledRelatedApps = 'getInstalledRelatedApps' in navigator;
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+
+    if (isGetInstalledRelatedApps && isAndroid) {
+        smartBanner.classList.toggle('hidden', false);
+        divNotSupported.classList.toggle('hidden', true);
+        checkForRelatedApps();
     }
 });
 
