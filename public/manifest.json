@@ -33,7 +33,7 @@
     "theme_color": "#3f51b5",
     "related_applications": [{
         "platform": "play",
-        "id": "ca.bigbackpack.getinstalledrelatedapps",
-        "url": "https://get-installed-apps.glitch.me"
+        "id": "com.bg.mydemogetinstalledrelatedapps",
+        "url": "https://vasil-dimov.github.io/my-get-installed-apps/"
     }]
 }
